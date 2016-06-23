@@ -5,7 +5,7 @@ LOCAL_ASSET_DIR := $(LOCAL_PATH)/assets
 
 #This tag is must for making it system apps
 LOCAL_MODULE_TAGS := optional
-LOCAL_PACKAGE_NAME := CyanBlackPapers
+LOCAL_PACKAGE_NAME := CreeperPapers
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 
