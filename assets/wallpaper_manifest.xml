@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wallpapers>
+<!--
+	Wallpapers accept:
+		url="<url of wallpaper>"  [REQUIRED]
+		name="<name of wallpaper>" 
+		thumbUrl="<url of thumbnail>"
+		author="<wallpaper author>" [REQUIRED] 
+-->
+
+	<category name ="CyanBlack Wallpapers">
+	<wallpaper
+		author="ROM-PacMe"
+		name="Flat CyanBlack"
+		url="https://cyanblack.github.io/Wallpapers/flat_cyanblack.png" />
+
+	<wallpaper
+		author="ROM-PacMe"
+		name="Superman CyanBlack"
+		url="https://cyanblack.github.io/Wallpapers/superman-cyanblack.png" />
+
+	<wallpaper
+		author="ROM-PacMe"
+		name="Vector Lion CyanBlack"
+		url="https://cyanblack.github.io/Wallpapers/vectorl-ion-CyanBlack.png" />
+
+	<wallpaper
+		author="ROM-PacMe"
+		name="SkrillBlack"
+		url="https://cyanblack.github.io/Wallpapers/SkrillBlack.png"/>
+
+	<wallpaper
+		author="ROM-PacMe"
+		name="Material CyanBlack"
+		url="https://cyanblack.github.io/Wallpapers/Material-cyanblack.png"/>
+
+	<wallpaper
+		author="ROM-PacMe"
+		name="Paisaje CyanBlack"
+		url="https://cyanblack.github.io/Wallpapers/paisajecyanblack.png"/>
+		
+	</category>
+</wallpapers>
