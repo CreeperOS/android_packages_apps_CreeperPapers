@@ -56,7 +56,7 @@ public class Preview extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.rompacme.cbpapers.R.layout.activity_preview);
+        setContentView(com.rompacme.cpapers.R.layout.activity_preview);
 
         //Toolbar ab = (Toolbar) findViewById(R.id.toolbar);
         //setActionBar(ab);
@@ -120,10 +120,10 @@ public class Preview extends Activity {
         // I'll look into fixes later
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             // this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            setContentView(com.rompacme.cbpapers.R.layout.activity_preview_land);
+            setContentView(com.rompacme.cpapers.R.layout.activity_preview_land);
             this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
-            ImageView v = (ImageView) findViewById(com.rompacme.cbpapers.R.id.imageView1);
+            ImageView v = (ImageView) findViewById(com.rompacme.cpapers.R.id.imageView1);
             UrlImageViewHelper.setUrlDrawable(v, link);
         }
 
