@@ -62,10 +62,10 @@ public class Preview extends Activity {
         //setActionBar(ab);
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        ImageView p = (ImageView) findViewById(com.rompacme.cbpapers.R.id.preView);
-        Button d = (Button) findViewById(com.rompacme.cbpapers.R.id.set_button);
-        Button s = (Button) findViewById(com.rompacme.cbpapers.R.id.save_button);
-        final ProgressBar progress = (ProgressBar) findViewById(com.rompacme.cbpapers.R.id.progress_bar);
+        ImageView p = (ImageView) findViewById(com.rompacme.cpapers.R.id.preView);
+        Button d = (Button) findViewById(com.rompacme.cpapers.R.id.set_button);
+        Button s = (Button) findViewById(com.rompacme.cpapers.R.id.save_button);
+        final ProgressBar progress = (ProgressBar) findViewById(com.rompacme.cpapers.R.id.progress_bar);
         progress.setVisibility(View.VISIBLE);
         progress.setIndeterminate(true);
 
@@ -137,7 +137,7 @@ public class Preview extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(com.rompacme.cbpapers.R.menu.activity_preview, menu);
+        getMenuInflater().inflate(com.rompacme.cpapers.R.menu.activity_preview, menu);
         return true;
     }
 
@@ -166,7 +166,7 @@ public class Preview extends Activity {
         switch (id) {
             case DIALOG_DOWNLOAD_PROGRESS:
                 mProgressDialog = new ProgressDialog(this);
-                mProgressDialog.setMessage(getResources().getString(com.rompacme.cbpapers.R.string.setting_wallpaper));
+                mProgressDialog.setMessage(getResources().getString(com.rompacme.cpapers.R.string.setting_wallpaper));
                 mProgressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 mProgressDialog.setIndeterminate(true);
                 mProgressDialog.setCancelable(true);
@@ -205,7 +205,7 @@ public class Preview extends Activity {
         @Override
         protected void onPostExecute(String result) {
             mProgressDialog.cancel();
-            Toast.makeText(getApplicationContext(), com.rompacme.cbpapers.R.string.set, Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), com.rompacme.cpapers.R.string.set, Toast.LENGTH_LONG).show();
         }
 
         protected void onProgressUpdate(String... progress) {
@@ -276,7 +276,7 @@ public class Preview extends Activity {
         protected void onPostExecute(String unused) {
             dismissDialog(DIALOG_DOWNLOAD_PROGRESS);
             Toast.makeText(getApplicationContext(),
-                    getResources().getString(com.rompacme.cbpapers.R.string.saved) + " " + getSvDir() + fileName,
+                    getResources().getString(com.rompacme.cpapers.R.string.saved) + " " + getSvDir() + fileName,
                     Toast.LENGTH_LONG).show();
         }
     }
